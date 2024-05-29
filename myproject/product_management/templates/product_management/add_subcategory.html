@@ -1,0 +1,18 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="product_id">Product:</label>
+    <select id="product_id" name="product_id">
+        {% for product in products %}
+            <option value="{{ product.product_id }}">{{ product.product_name }}</option>
+        {% endfor %}
+    </select>
+    <label for="product_price">Product Price:</label>
+    <input type="text" id="product_price" name="product_price">
+    <label for="product_image">Product Image:</label>
+    <input type="file" id="product_image" name="product_image">
+    <label for="product_model">Product Model:</label>
+    <input type="text" id="product_model" name="product_model">
+    <label for="product_ram">Product RAM:</label>
+    <input type="text" id="product_ram" name="product_ram">
+    <button type="submit">Add Subcategory</button>
+</form>
