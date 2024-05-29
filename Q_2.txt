@@ -1,0 +1,4 @@
+How to Check Installed Version of Django
+To check the installed version of Django, you can use the following command:
+
+python3 -m django --version

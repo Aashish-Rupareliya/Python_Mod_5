@@ -1,0 +1,4 @@
+Mention what command line can be used to load data into Django?
+python manage.py loaddata <file_name>
+python manage.py shell
+

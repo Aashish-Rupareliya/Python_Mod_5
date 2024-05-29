@@ -1,0 +1,2 @@
+A QuerySet in Django is a collection of database queries to retrieve objects from your database. 
+A QuerySet allows you to read the data from the database, filter it, and perform various operations on it.
